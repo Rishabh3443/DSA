@@ -41,27 +41,37 @@ void print3(int &n)
     }
 }
 
-void print4(int &n)
+void print5(int &n)
 { int start = 0;
-    for (int i = 1; i <= n; i++)
-   
-    {
-        for(int j=n;j>=i;j--){
-            
-            cout<<n-j+1 ;
-             
+    for (int i = 0; i < n; i++){
+        
+        for(int j = 0; j<(n-i-1);j++ ){
+         
+            cout<<" ";
         }
+        
+
+        for (int k = 0; k < (2*i+1); k++)
+        {
+            cout<<"x";
+        }
+
+        
+
+        
         cout<<endl;
+
         
        
     }
 }
 
+
 int main()
 {
     int n = 5;
 
-    print4(n);
+    print5(n);
 
     return 0;
 }
