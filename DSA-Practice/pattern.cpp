@@ -13,7 +13,6 @@ void print1(int n)
         cout << endl;
     }
 };
-
 void print2(int n)
 {
 
@@ -26,7 +25,6 @@ void print2(int n)
         cout << endl;
     }
 };
-
 void print3(int &n)
 {
     cout << "iam running";
@@ -40,7 +38,6 @@ void print3(int &n)
         cout << endl;
     }
 }
-
 void print5(int &n)
 { int start = 0;
     for (int i = 0; i < n; i++){
@@ -65,7 +62,6 @@ void print5(int &n)
        
     }
 }
-
 void print6(int &n)
 { 
     for (int i = 0; i < n; i++){
@@ -114,11 +110,24 @@ void print6(int &n)
 }
 
 
+void print7(int &n){
+
+    for(int i=0;i<n;i++){
+
+            for(int j=0;j<n;j++ ){
+                cout<<"* ";
+            }
+
+            cout<<endl;
+        }
+
+}
+
 int main()
 {
     int n = 5;
 
-    print6(n);
+    print7(n);
 
     return 0;
 }
